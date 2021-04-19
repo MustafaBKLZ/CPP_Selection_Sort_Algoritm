@@ -13,7 +13,7 @@ void printArray(int dizii[], int size)
 
 int main() {
 	int Sayilar[] = { 5, 6, 8, 1, 88, 99, 78, 45, 36, 25, 12, 9, 7 };
-	int  enkucuk, enbuyuk, yedek;
+	int  enkucuk, yedek;
 	int n = sizeof(Sayilar) / sizeof(Sayilar[0]);
 
 
@@ -21,12 +21,9 @@ int main() {
 	{
 		enkucuk = i;
 		for (int j = i + 1; j < n; j++)
-		{
 			if (Sayilar[j] < Sayilar[enkucuk])
-			{
 				enkucuk = j;
-			}
-		}
+
 		if (enkucuk != i)
 		{
 			yedek = Sayilar[i];
